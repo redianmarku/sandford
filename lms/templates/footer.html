@@ -11,7 +11,7 @@
   <footer>
     <div class="colophon">
       <nav class="nav-colophon">
-        <ol>
+        <ol style="display: flex">
           <li><a href="${reverse('about')}">${_("About")}</a></li>
           <li><a href="${reverse('about')}#careers">${_("Careers")}</a></li>
           <li><a href="${reverse('about')}#contact">${_("Contact")}</a></li>
@@ -26,9 +26,6 @@
           <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
       % endif
 
-    </div>
-    <div class="references">
-      <span>Built on <a href="http://open.edx.org">OpenEdX</a>.</span>
     </div>
 
     <div class="copyright">
